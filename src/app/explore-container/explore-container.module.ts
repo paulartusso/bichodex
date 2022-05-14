@@ -5,10 +5,16 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { ExploreContainerComponent } from './explore-container.component';
+import { SearchBarComponent } from '../components/search-bar/search-bar.component';
 
 @NgModule({
-  imports: [ CommonModule, FormsModule, IonicModule],
-  declarations: [ExploreContainerComponent],
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule],
+  declarations: [
+    ExploreContainerComponent,
+    SearchBarComponent],
   exports: [ExploreContainerComponent]
 })
-export class ExploreContainerComponentModule {}
+export class ExploreContainerComponentModule { }
